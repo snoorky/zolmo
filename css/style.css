@@ -1,0 +1,833 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2f3a52;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1, h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 2;
+}
+
+p {
+  font-size: 16px;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 70px;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  z-index: 4;
+}
+header .logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+header .logo img {
+  width: 60px;
+  height: 60px;
+}
+header .logo .copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .logo .copyright #nomeLogo {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+}
+header .logo .copyright p {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+header nav {
+  z-index: 5;
+  flex: 2;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  position: relative;
+  padding: 5px 10px;
+}
+header nav ul li.dropdown .itens {
+  display: none;
+  position: absolute;
+  top: 30px;
+  padding-top: 10px;
+  left: 0;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease-in-out;
+}
+header nav ul li.dropdown .itens li {
+  padding: 10px 20px;
+}
+header nav ul li.dropdown:hover .itens {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+header .cta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+header .navMobile {
+  display: none;
+}
+
+section.banner {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  padding: 150px 10%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(47, 58, 82, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+section.banner .info {
+  z-index: 2;
+  width: 48%;
+}
+section.banner .info h1 {
+  color: white;
+  margin-bottom: 8px;
+}
+section.banner .info p {
+  margin-top: 16px;
+  color: whitesmoke;
+}
+section.banner .captacao {
+  background-color: white;
+  border-radius: 20px;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: -10px;
+  z-index: 3;
+  width: 45%;
+  height: 100%;
+  padding: 25px;
+}
+section.banner .captacao h3 {
+  width: 100%;
+}
+section.banner .captacao p {
+  width: 100%;
+}
+section.banner .captacao form {
+  padding: 25px 0 0 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+section.banner .captacao form input {
+  margin: 0 10px 10px 0;
+  padding-left: 16px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #2f3a52;
+  border: none;
+  box-shadow: 0px 0px 5px 1px black;
+  flex: 2;
+  color: gainsboro;
+}
+section.banner .captacao form input::-moz-placeholder {
+  color: gainsboro;
+}
+section.banner .captacao form input::placeholder {
+  color: gainsboro;
+}
+section.banner .captacao form input:focus {
+  outline: none;
+}
+section.banner .captacao form select#preco, section.banner .captacao form select#tipo {
+  margin: 0 10px 10px 0;
+  padding-left: 16px;
+  flex: 1;
+  border-radius: 10px;
+  background-color: #2f3a52;
+  border: none;
+  box-shadow: 0px 0px 5px 1px black;
+  -webkit-appearance: menulist-button;
+  -moz-appearance: none;
+       appearance: none;
+  color: gainsboro;
+}
+section.banner .captacao form select#preco:focus, section.banner .captacao form select#tipo:focus {
+  outline: none;
+}
+section.banner .captacao form #submit {
+  background-color: green;
+  padding: 0;
+}
+
+section.beneficios {
+  background-color: #ffffff;
+  display: flex;
+  padding: 50px 10%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid #e8e6e6;
+}
+section.beneficios .item {
+  padding: 0 20px;
+}
+
+section.servicos {
+  background: linear-gradient(180deg, #ffffff, #e8e6e6);
+  padding: 100px 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+section.servicos .container {
+  margin: 50px -10px 0 -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+section.servicos .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  border: 1px solid #2f3a52;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+section.servicos .container .card img {
+  width: 50px;
+  margin-bottom: 16px;
+}
+section.servicos .container .card a {
+  margin: 16px 0 0 0;
+  padding: 8px 16px 8px 0;
+  text-align: left;
+  color: green;
+}
+
+section.imoveis {
+  background: linear-gradient(180deg, #e8e6e6, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+section.imoveis .choose {
+  margin: 50px -10px 25px -10px;
+  width: 100%;
+  display: flex;
+}
+section.imoveis .choose input[type=radio] {
+  display: none;
+}
+section.imoveis .choose input[type=radio]#actCondominio:checked ~ label.condominio {
+  background-color: orange;
+}
+section.imoveis .choose input[type=radio]#actEmpreendimento:checked ~ label.empreendimento {
+  background-color: green;
+}
+section.imoveis .choose label {
+  flex-grow: 1;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  background-color: #2f3a52;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+section.imoveis .choose label.condominio {
+  margin-right: 10px;
+}
+section.imoveis .containerCondominios, section.imoveis .containerEmpreendimentos {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 25px -10px 100px -10px;
+}
+section.imoveis .containerCondominios .card, section.imoveis .containerEmpreendimentos .card {
+  width: 368px;
+  border: 1px solid #2f3a52;
+  margin: 10px;
+  border-radius: 10px;
+}
+section.imoveis .containerCondominios .card img, section.imoveis .containerEmpreendimentos .card img {
+  width: 100%;
+  border-radius: 9px 9px 0 0;
+}
+section.imoveis .containerCondominios .card h5, section.imoveis .containerEmpreendimentos .card h5 {
+  margin: 20px;
+}
+section.imoveis .containerCondominios .card .itens, section.imoveis .containerEmpreendimentos .card .itens {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+section.imoveis .containerCondominios .card .itens .room, section.imoveis .containerCondominios .card .itens .bath, section.imoveis .containerCondominios .card .itens .size, section.imoveis .containerEmpreendimentos .card .itens .room, section.imoveis .containerEmpreendimentos .card .itens .bath, section.imoveis .containerEmpreendimentos .card .itens .size {
+  display: flex;
+  align-items: center;
+}
+section.imoveis .containerCondominios .card .itens .room p, section.imoveis .containerCondominios .card .itens .bath p, section.imoveis .containerCondominios .card .itens .size p, section.imoveis .containerEmpreendimentos .card .itens .room p, section.imoveis .containerEmpreendimentos .card .itens .bath p, section.imoveis .containerEmpreendimentos .card .itens .size p {
+  color: #2f3a52;
+}
+section.imoveis .containerCondominios .card .itens img, section.imoveis .containerEmpreendimentos .card .itens img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+section.imoveis .containerCondominios .card .info, section.imoveis .containerEmpreendimentos .card .info {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.imoveis .containerCondominios .card .info a, section.imoveis .containerEmpreendimentos .card .info a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 44px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
+section.imoveis .containerCondominios .card .info h6, section.imoveis .containerEmpreendimentos .card .info h6 {
+  margin-left: 50px;
+}
+section.imoveis .containerEmpreendimentos {
+  display: none;
+}
+
+section.cta {
+  background: linear-gradient(180deg, #ffffff, #e8e6e6);
+  padding: 50px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+section.cta .chamada {
+  display: flex;
+  flex-direction: column;
+  width: 41%;
+}
+section.cta .chamada a {
+  margin: 24px 0;
+  background-color: green;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+}
+section.cta .chamada .data {
+  display: flex;
+  justify-content: space-between;
+}
+section.cta .mapa {
+  width: 54%;
+  display: flex;
+  position: relative;
+}
+section.cta .mapa img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+section.cta .mapa .item-1 {
+  position: absolute;
+  background-color: white;
+  top: 20px;
+  left: -20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px grey;
+  padding: 20px;
+}
+section.cta .mapa .item-2 {
+  position: absolute;
+  background-color: white;
+  bottom: -20px;
+  right: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px grey;
+  padding: 20px;
+}
+section.cta .mapa .info {
+  display: flex;
+  margin-bottom: 8px;
+}
+section.cta .mapa .info img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+section.cta .mapa .info p {
+  font-size: 14px;
+}
+section.cta .mapa .info #accent {
+  color: #2f3a52;
+  font-weight: 600;
+}
+section.cta .mapa a {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+section.newsletter {
+  padding: 100px 10%;
+  background: linear-gradient(180deg, #e8e6e6, #ffffff);
+}
+section.newsletter .news {
+  background-color: #2f3a52;
+  padding: 25px 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+section.newsletter .news .info {
+  width: 55%;
+}
+section.newsletter .news .info h2 {
+  color: white;
+}
+section.newsletter .news .info p {
+  color: whitesmoke;
+}
+section.newsletter .news .contact {
+  width: 40%;
+  display: flex;
+}
+section.newsletter .news .contact form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+section.newsletter .news .contact form input {
+  width: 100%;
+  height: 70px;
+  padding-left: 48px;
+  border-radius: 10px;
+  border: none;
+}
+section.newsletter .news .contact form input:focus {
+  outline: none;
+}
+section.newsletter .news .contact form img {
+  width: 20px;
+  position: absolute;
+  left: 16px;
+}
+section.newsletter .news .contact form button {
+  position: absolute;
+  height: 50px;
+  right: 20px;
+  border: none;
+  background-color: green;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: white;
+}
+
+footer {
+  padding: 10px 10%;
+  background: linear-gradient(180deg, #ffffff, #e8e6e6);
+}
+footer .mapsite {
+  display: flex;
+  flex-flow: row wrap;
+}
+footer .mapsite .info {
+  flex: 1.2;
+  margin-right: 24px;
+}
+footer .mapsite .info .logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 16px;
+}
+footer .mapsite .info .logo img {
+  width: 60px;
+  height: 60px;
+}
+footer .mapsite .info .logo .copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .mapsite .info .logo .copyright #nomeLogo {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+}
+footer .mapsite .info .logo .copyright p {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+footer .mapsite .info .social img {
+  margin: 20px 10px 0 0;
+  width: 30px;
+}
+footer .mapsite .institucional, footer .mapsite .suporte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+footer .mapsite .institucional h4, footer .mapsite .suporte h4 {
+  margin-bottom: 24px;
+}
+footer .mapsite .institucional a, footer .mapsite .suporte a {
+  padding: 0 0 10px 0;
+}
+footer .mapsite .institucional p, footer .mapsite .suporte p {
+  color: #2f3a52;
+}
+footer hr {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright p {
+  color: #2f3a52;
+}
+
+@media only screen and (max-width: 480px) {
+  h1, h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: px;
+  }
+  h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+  }
+  a {
+    font-size: 14px;
+  }
+  img {
+    width: 70px;
+  }
+  header {
+    padding: 10px 5%;
+    z-index: 4;
+  }
+  header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+  }
+  header .logo .copyright #nomeLogo {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  header .logo .copyright p {
+    font-size: 6px;
+    letter-spacing: 1.7px;
+  }
+  header nav {
+    display: none;
+  }
+  header .cta h6 {
+    line-height: 1;
+  }
+  header .navMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navMobile img {
+    margin-left: 25px;
+    width: 30px;
+  }
+  header .navMobile .menu {
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    z-index: 999;
+    padding: 0 25px;
+    display: none;
+    flex-direction: column;
+  }
+  header .navMobile .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  header .navMobile .menu ul li {
+    width: 100%;
+    margin-right: 30px;
+    padding: 16px 0;
+    text-align: right;
+  }
+  section.banner {
+    padding: 25px 7%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.banner .info {
+    text-align: center;
+    width: 100%;
+  }
+  section.banner .info h1 {
+    color: white;
+  }
+  section.banner .info p {
+    margin: 16px;
+    color: whitesmoke;
+  }
+  section.banner .captacao {
+    margin-right: 0;
+    z-index: 3;
+    width: 90%;
+  }
+  section.beneficios {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5%;
+    justify-content: space-between;
+    border-bottom: 2px solid #e8e6e6;
+  }
+  section.beneficios .item {
+    width: 48%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  section.beneficios .item img {
+    width: 50px;
+  }
+  section.beneficios .item p {
+    font-size: 12px;
+  }
+  section.servicos {
+    padding: 50px 7%;
+  }
+  section.servicos .container {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+  section.servicos .container .card {
+    padding: 20px;
+    margin: 0 0 10px 0;
+  }
+  section.servicos .container .card a {
+    margin: 8px 0 0 0;
+  }
+  section.imoveis {
+    text-align: center;
+    padding: 0 7%;
+  }
+  section.imoveis .choose {
+    margin: 25px 0;
+  }
+  section.imoveis .containerCondominios, section.imoveis .containerEmpreendimentos {
+    flex-direction: column;
+    margin: 0;
+  }
+  section.imoveis .containerCondominios .card, section.imoveis .containerEmpreendimentos .card {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  section.imoveis .containerCondominios .card h5, section.imoveis .containerEmpreendimentos .card h5 {
+    margin: 5px 0 16px 0;
+  }
+  section.imoveis .containerCondominios .card .itens, section.imoveis .containerEmpreendimentos .card .itens {
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  section.imoveis .containerCondominios .card .info, section.imoveis .containerEmpreendimentos .card .info {
+    margin: 15px;
+  }
+  section.imoveis .containerCondominios .card .info h6, section.imoveis .containerEmpreendimentos .card .info h6 {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+  section.cta {
+    padding: 50px 7%;
+    flex-direction: column;
+  }
+  section.cta .chamada {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  section.cta .chamada h2 {
+    width: 70%;
+    margin-bottom: 16px;
+  }
+  section.cta .chamada a {
+    width: 100%;
+  }
+  section.cta .chamada .data {
+    display: flex;
+    justify-content: space-between;
+  }
+  section.cta .chamada .data .item {
+    width: 30%;
+  }
+  section.cta .mapa {
+    margin-top: 50px;
+    width: 100%;
+  }
+  section.cta .mapa .item-1 {
+    top: 10px;
+    left: -10px;
+    padding: 10px;
+  }
+  section.cta .mapa .item-2 {
+    bottom: -10px;
+    right: 10px;
+    padding: 10px;
+  }
+  section.cta .mapa .info {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  section.cta .mapa .info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+  section.cta .mapa .info p {
+    font-size: 10px;
+  }
+  section.cta .mapa a {
+    font-size: 10px;
+  }
+  section.newsletter {
+    padding: 24px 7%;
+  }
+  section.newsletter .news {
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+  section.newsletter .news .info {
+    text-align: center;
+    width: 100%;
+  }
+  section.newsletter .news .contact {
+    margin-top: 16px;
+    width: 100%;
+  }
+  section.newsletter .news .contact form {
+    width: 100%;
+  }
+  section.newsletter .news .contact form input {
+    width: 100%;
+    height: 50px;
+    padding-left: 40px;
+  }
+  section.newsletter .news .contact form img {
+    left: 10px;
+  }
+  section.newsletter .news .contact form button {
+    height: 40px;
+    right: 10px;
+    padding: 8px;
+  }
+  footer {
+    padding: 50px 7% 16px 7%;
+  }
+  footer .mapsite {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .mapsite .info {
+    position: relative;
+    flex: 1;
+    margin: 0 0 24px 0;
+  }
+  footer .mapsite .info .social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+  }
+  footer hr {
+    margin: 20px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

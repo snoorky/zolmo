@@ -1,0 +1,344 @@
+@media only screen and (max-width: 480px) {
+    h1, h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    h5 {
+        font-size: 20px;
+    }
+    
+    h6 {
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    img {
+       width: 70px; 
+    }
+
+    header {
+        padding: 10px 5%;
+        z-index: 4;
+    
+        .logo {
+    
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 4px;
+            }
+    
+            .copyright {
+    
+                #nomeLogo {
+                    font-size: 20px;
+                    letter-spacing: 5px;
+                }
+                
+                p {
+                    font-size: 6px;
+                    letter-spacing: 1.7px;
+                }
+            }
+        }
+    
+        nav {
+            display: none;
+        }
+    
+        .cta {
+            h6 {
+                line-height: 1;
+            }
+        }
+
+        .navMobile {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin-left: 25px;
+                width: 30px;
+            }
+
+            .menu {
+                background-color: white;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 30vw;
+                height: 100vh;
+                z-index: 999;
+                padding: 0 25px;
+                display: none;
+                flex-direction: column;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+
+                    li {
+                        width: 100%;
+                        margin-right: 30px;
+                        padding: 16px 0;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    section.banner {
+        padding: 25px 7%;
+        display: flex;
+        flex-direction: column;
+    
+        .info {
+            text-align: center;
+            width: 100%;
+    
+            h1 {
+                color: white;
+            }
+    
+            p {
+                margin: 16px;
+                color: whitesmoke;
+            }
+        }
+    
+        .captacao {
+            margin-right: 0;
+            z-index: 3;
+            width: 90%;
+        }
+    }
+
+    section.beneficios {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 5%;
+        justify-content: space-between;
+        border-bottom: 2px solid #e8e6e6;
+    
+        .item {
+            width: 48%;
+            padding: 0;
+            margin-bottom: 10px;
+
+            img {
+                width: 50px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    section.servicos {
+        padding: 50px 7%;
+    
+        .container {
+            margin-top: 25px;
+            flex-direction: column;
+    
+            .card {
+                padding: 20px;
+                margin: 0 0 10px 0;
+    
+                a {
+                    margin: 8px 0 0 0;
+                }
+            }
+        }
+    }
+
+    section.imoveis {
+        text-align: center;
+        padding: 0 7%;
+    
+        .choose {
+            margin: 25px 0;
+        }
+    
+        .containerCondominios, .containerEmpreendimentos {
+            flex-direction: column;
+            margin: 0;
+    
+            .card {
+                width: 100%;
+                margin: 10px 0 0 0;
+    
+                h5 {
+                    margin: 5px 0 16px 0;
+                }
+    
+                .itens {
+                    margin: 0;
+                    justify-content: space-evenly;
+                }
+    
+                .info {
+                    margin: 15px;
+    
+                    h6 {
+                        font-size: 18px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.cta {
+        padding: 50px 7%;
+        flex-direction: column;
+    
+        .chamada {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+
+            h2 {
+                width: 70%;
+                margin-bottom: 16px;
+            }
+    
+            a {
+                width: 100%;
+            }
+    
+            .data {
+                display: flex;
+                justify-content: space-between;
+
+                .item {
+                    width: 30%;
+                }
+            }
+        }
+    
+        .mapa {
+            margin-top: 50px;
+            width: 100%;
+    
+            .item-1 {
+                top: 10px;
+                left: -10px;
+                padding: 10px;
+            }
+    
+            .item-2 {
+                bottom: -10px;
+                right: 10px;
+                padding: 10px;
+            }
+    
+            .info {
+                display: flex;
+                margin-bottom: 8px;
+    
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 8px;
+                }
+    
+                p {
+                    font-size: 10px;
+                }
+            }
+    
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+
+    section.newsletter {
+        padding: 24px 7%;
+    
+        .news {
+            padding: 20px 20px;
+            flex-direction: column;
+    
+            .info {
+                text-align: center;
+                width: 100%;
+            }
+    
+            .contact {
+                margin-top: 16px;
+                width: 100%;
+    
+                form {
+                    width: 100%;
+    
+                    input {
+                        width: 100%;
+                        height: 50px;
+                        padding-left: 40px;
+                    }
+
+                    img {
+                        left: 10px;
+                    }
+    
+                    button {
+                        height: 40px;
+                        right: 10px;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 50px 7% 16px 7%;
+    
+        .mapsite {
+            display: flex;
+            flex-direction: column;
+    
+            .info {
+                position: relative;
+                flex: 1;
+                margin: 0 0 24px 0;
+
+                .social {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                }
+            }
+        }
+    
+        hr {
+            margin: 20px 0;
+        }
+    }
+}

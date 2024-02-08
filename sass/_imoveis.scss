@@ -1,0 +1,112 @@
+section.imoveis {
+    background: linear-gradient(180deg, #e8e6e6, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+
+    .choose {
+        margin: 50px -10px 25px -10px;
+        width: 100%;
+        display: flex;
+
+        input[type="radio"] {
+            display: none;
+
+            &#actCondominio:checked ~ label.condominio {
+                background-color: orange;
+            }
+
+            &#actEmpreendimento:checked ~ label.empreendimento {
+                background-color: green;
+            }
+        }
+
+        label {
+            flex-grow: 1;
+            text-align: center;
+            height: 44px;
+            line-height: 44px;
+            background-color: #2f3a52;
+            border: none;
+            border-radius: 10px;
+            color: #ffffff;
+            cursor: pointer;
+
+            &.condominio {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .containerCondominios, .containerEmpreendimentos {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 25px -10px 100px -10px;
+
+        .card {
+            width: 368px;
+            border: 1px solid #2f3a52;
+            margin: 10px;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                border-radius: 9px 9px 0 0;
+            }
+
+            h5 {
+                margin: 20px;
+            }
+
+            .itens {
+                margin: 0 20px;
+                display: flex;
+                justify-content: space-between;
+
+                .room, .bath, .size {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        color: #2f3a52;
+                    }
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+            }
+
+            .info {
+                margin: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    align-items: center;
+                    height: 44px;
+                    background-color: green;
+                    color: white;
+                    border-radius: 10px;
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+
+                h6 {
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+
+    .containerEmpreendimentos {
+        display: none;
+    }    
+}
