@@ -11,8 +11,14 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-h1, h2 {
+h1 {
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+h1.home, h2 {
   font-size: 44px;
+  line-height: 1.2;
 }
 
 h3 {
@@ -275,9 +281,42 @@ section.imoveis {
   flex-direction: column;
   align-items: center;
   padding: 0 10%;
+  position: relative;
+}
+section.imoveis .filtro {
+  top: -50px;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  padding: 25px;
+  border: 2px solid #2f3a52;
+  box-shadow: 0px 0px 5px 1px white;
+}
+section.imoveis .filtro form {
+  display: flex;
+}
+section.imoveis .filtro form select {
+  margin-right: 24px;
+  width: 150px;
+  padding-left: 16px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #2f3a52;
+  border: none;
+  box-shadow: 0px 0px 5px 1px black;
+  -webkit-appearance: menulist-button;
+  -moz-appearance: none;
+       appearance: none;
+  color: gainsboro;
+}
+section.imoveis .filtro form select:focus {
+  outline: none;
 }
 section.imoveis .choose {
-  margin: 50px -10px 25px -10px;
+  margin: 50px -10px -50px -10px;
   width: 100%;
   display: flex;
 }
@@ -307,7 +346,7 @@ section.imoveis .choose label.condominio {
 section.imoveis .containerCondominios, section.imoveis .containerEmpreendimentos {
   display: flex;
   flex-flow: row wrap;
-  margin: 25px -10px 100px -10px;
+  margin: 100px -10px 50px -10px;
 }
 section.imoveis .containerCondominios .card, section.imoveis .containerEmpreendimentos .card {
   width: 368px;
@@ -560,8 +599,206 @@ footer .copyright p {
   color: #2f3a52;
 }
 
+section.pagesBanner {
+  background-size: cover;
+  padding: 150px 10%;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+section.pagesBanner .background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: contain;
+}
+section.pagesBanner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(47, 58, 82, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+section.pagesBanner .info {
+  float: left;
+  z-index: 2;
+  width: 60%;
+}
+section.pagesBanner .info h1 {
+  color: white;
+  margin-bottom: 8px;
+}
+section.pagesBanner .info p {
+  margin-top: 16px;
+  color: whitesmoke;
+}
+
+section.aboutMe {
+  background: linear-gradient(180deg, #e8e6e6, #ffffff);
+  padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+section.aboutMe .history {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+section.aboutMe .history h2 {
+  margin-bottom: 25px;
+}
+section.aboutMe .history p {
+  margin-bottom: 16px;
+}
+section.aboutMe .history a {
+  text-align: center;
+  width: 150px;
+  margin-top: 24px;
+  padding: 16px 32px;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+}
+section.aboutMe .profile {
+  width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+section.aboutMe .profile img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  position: relative;
+}
+section.aboutMe .profile .circle {
+  border: 2px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  position: absolute;
+}
+section.aboutMe .profile .circleLogo {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-color: #2f3a52;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+}
+section.aboutMe .profile .circleLogo .circleBorder {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+}
+section.aboutMe .profile .circleLogo img.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+}
+
+section.sobreBeneficios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+section.sobreBeneficios .dif {
+  display: flex;
+  padding: 50px 10%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+section.sobreBeneficios .dif .item {
+  padding: 0 20px;
+}
+section.sobreBeneficios .dif .item p {
+  font-size: 14px;
+}
+section.sobreBeneficios hr {
+  width: 100%;
+  color: rgba(232, 230, 230, 0.5);
+}
+
+section.sobreParceria {
+  background: #ffffff;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+section.sobreParceria .info {
+  width: 50%;
+}
+section.sobreParceria .info h2 {
+  margin-bottom: 25px;
+}
+section.sobreParceria .info p {
+  margin-bottom: 16px;
+}
+section.sobreParceria .parcerias {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+section.sobreParceria .parcerias .circle {
+  width: 48%;
+  position: relative;
+}
+section.sobreParceria .parcerias .circle .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+section.sobreParceria .parcerias .circle img.empresa {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+section.sobreParceria .parcerias .circle .overlay {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 @media only screen and (max-width: 480px) {
-  h1, h2 {
+  h1 {
+    font-size: 32px;
+  }
+  h1.home, h2 {
     font-size: 24px;
   }
   h3 {
@@ -698,7 +935,7 @@ footer .copyright p {
   }
   section.imoveis {
     text-align: center;
-    padding: 0 7%;
+    padding: 50px 7% 0 7%;
   }
   section.imoveis .choose {
     margin: 25px 0;
@@ -724,6 +961,9 @@ footer .copyright p {
   section.imoveis .containerCondominios .card .info h6, section.imoveis .containerEmpreendimentos .card .info h6 {
     font-size: 18px;
     margin-left: 30px;
+  }
+  section.imoveis .filtro {
+    display: none;
   }
   section.cta {
     padding: 50px 7%;
@@ -808,6 +1048,93 @@ footer .copyright p {
     height: 40px;
     right: 10px;
     padding: 8px;
+  }
+  section.pagesBanner {
+    padding: 50px 5%;
+    justify-content: center;
+    text-align: center;
+  }
+  section.pagesBanner .info {
+    width: 100%;
+  }
+  section.aboutMe {
+    padding: 50px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section.aboutMe .history {
+    width: 100%;
+  }
+  section.aboutMe .history a {
+    text-align: center;
+    width: 150px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    padding: 16px 24px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+  }
+  section.aboutMe .profile {
+    width: 100%;
+  }
+  section.sobreBeneficios {
+    padding: 0 5%;
+    text-align: center;
+  }
+  section.sobreBeneficios .dif {
+    margin-top: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    justify-content: space-between;
+    border-bottom: 2px solid #e8e6e6;
+  }
+  section.sobreBeneficios .dif .item {
+    width: 48%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  section.sobreBeneficios .dif .item img {
+    width: 50px;
+  }
+  section.sobreBeneficios .dif .item p {
+    font-size: 12px;
+  }
+  section.sobreParceria {
+    padding: 50px 7% 0 7%;
+    flex-direction: column;
+  }
+  section.sobreParceria .info {
+    width: 100%;
+  }
+  section.sobreParceria .parcerias {
+    width: 100%;
+    height: 160px;
+  }
+  section.sobreParceria .parcerias .circle {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  section.sobreParceria .parcerias .circle .back {
+    width: 96%;
+    height: 160px;
+  }
+  section.sobreParceria .parcerias .circle img.empresa {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+  section.sobreParceria .parcerias .circle .overlay {
+    width: 96%;
+    height: 160px;
+    top: 0%;
+    left: 2%;
   }
   footer {
     padding: 50px 7% 16px 7%;

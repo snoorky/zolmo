@@ -10,7 +10,7 @@
     <meta property="og:description" content="Case para um consultor imobiliário de Sorocaba">
     <meta property="og:image" content="https://sno-orky.github.io/zolmo/images/c2a99153f2b44e7a86654564e2f74114.jpg">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Raphael - Zolmo</title>
+    <title>Raphael - Zolmo: Imóveis</title>
 </head>
 <body>
     <header>
@@ -58,21 +58,20 @@
             </div>
         </div>
     </header>
-    <section class="banner">
+    <section class="pagesBanner">
+        <div class="background">
+            <img src="./images/back-imoveis.jpg" alt="">
+        </div>
         <div class="overlay"></div>
         <div class="info">
-            <h1 class="home">Viver o luxo da residência dos seus sonhos!</h1>
-            <p>A arte da vida bem vivida começa com a escolha certa da sua residência. Descubra opções exclusivas que
-                combinam estilo e conforto para você.</p>
-            <p>Preencha o formulário e encontre o imóvel de luxo que melhor se adequa ao seu estilo de vida.</p>
+            <h1>Compra e Venda Exclusiva</h1>
+            <p>A compra e venda exclusiva oferece a você acesso a um portfólio exclusivo de imóveis em condomínios fechados de alto padrão em Sorocaba e região.</p>
+            <p>Cada propriedade é cuidadosamente selecionada para oferecer luxo e conforto em cada detalhe, combinando estilo e qualidade na sua vida.</p>
         </div>
-        <div class="captacao">
-            <h3>Encontre o imóvel ideal para você!</h3>
-            <p>Diga-nos o que você procura e transforme seus desejos em realidade</p>
+    </section>
+    <section class="imoveis">
+        <div class="filtro">
             <form action="#" method="post">
-                <input type="text" placeholder="Nome Completo">
-                <input type="tel" name="telefone" id="telefone" placeholder="DDD + Telefone">
-                <input type="text" placeholder="Bairro">
                 <select name="preco" id="preco">
                     <option value="" selected disabled>Preço estimado</option>
                     <option value="1">Até 500 mil</option>
@@ -86,69 +85,19 @@
                     <option value="3">Chácara</option>
                     <option value="4">Terreno</option>
                 </select>
-                <input type="submit" value="Enviar" id="submit">
+                <select name="quartos" id="quartos">
+                    <option value="" selected disabled>Dormitórios</option>
+                    <option value="1">2 dormitórios</option>
+                    <option value="2">3 dormitórios</option>
+                    <option value="3">Suítes</option>
+                </select>
+                <select name="cidade" id="cidade">
+                    <option value="" selected disabled>Cidade</option>
+                    <option value="1">São Paulo</option>
+                    <option value="2">Porto Feliz</option>
+                    <option value="3">Votorantim</option>
+                </select>
             </form>
-        </div>
-    </section>
-    <section class="beneficios">
-        <div class="item">
-            <img src="./images/consultoria.png" alt="Consultoria">
-            <h6>Consultoria personalizada</h6>
-            <p>Trabalhamos dedicados a entender profundamente os seus desejos e suas necessidades.</p>
-        </div>
-        <div class="item">
-            <img src="./images/diversidade.png" alt="Diversidade">
-            <h6>Diversidades de imóveis</h6>
-            <p>Possuímos uma ampla variedade de imóveis, desde residências exclusivas até luxuosas.</p>
-        </div>
-        <div class="item">
-            <img src="./images/alto-padrao.png" alt="Alto Padrão">
-            <h6>Alto padrão</h6>
-            <p>Oferecemos propriedades exclusivas que atendem aos mais altos padrões de qualidade.</p>
-        </div>
-        <div class="item">
-            <img src="./images/parceria.png" alt="Parceria">
-            <h6>Parceria estratégica</h6>
-            <p>Estabelecemos parcerias colaborativas com construtoras, trazendo diversidade.</p>
-        </div>
-    </section>
-    <section class="servicos">
-        <h2>Nossos serviços</h2>
-        <p>Descubra como nossa abordagem diferenciada pode atender às suas necessidades imobiliárias de maneira excepional</p>
-        <div class="container">
-            <div class="card">
-                <img src="./images/intermediacao.png" alt="Intermediação">
-                <h4>Intermediação Imobiliária</h4>
-                <p>Conecte-se com compradores e vendedores em condomínios fechados de alto padrão em Sorocaba e região.</p>
-                <a href="#">Em breve</a>
-            </div>
-            <div class="card">
-                <img src="./images/compra-venda.png" alt="Compra e venda">
-                <h4>Compra e Venda Exclusiva</h4>
-                <p>Explore nossos imóveis em condomínios fechados onde o luxo e o conforto encontram-se em cada detalhe.</p>
-                <a href="#">Em breve</a>
-            </div>
-            <div class="card">
-                <img src="./images/avaliacao-imobiliaria.png" alt="Avaliação">
-                <h4>Avaliação Imobiliária</h4>
-                <p>Obtenha um parecer técnico e documentação precisa para decisões judiciais, partilhas e investimentos.</p>
-                <a href="#">Em breve</a>
-            </div>
-            <div class="card">
-                <img src="./images/migracao.png" alt="Assessoria">
-                <h4>Assessoria para Migração</h4>
-                <p>Guiarei você em uma jornada tranquila e bem planejada de mudança de cidade grande para o interior.</p>
-                <a href="#">Em breve</a>
-            </div>
-        </div>
-    </section>
-    <section class="imoveis">
-        <h2>Encontre o melhor lugar que combine com você</h2>
-        <div class="choose">
-            <input type="radio" id="actCondominio" name="tipo-imovel">
-            <label class="condominio" for="actCondominio">Condomínios</label>
-            <input type="radio" id="actEmpreendimento" name="tipo-imovel">
-            <label class="empreendimento" for="actEmpreendimento">Empreendimentos</label>
         </div>
         <div class="containerCondominios">
             <div class="card">
@@ -283,78 +232,8 @@
                     <h6>R$2.200.000,00</h6>
                 </div>
             </div>
-        </div>
-        <div class="containerEmpreendimentos">
-            <div class="card">
-                <img src="./images/empreendimentos/emp1.webp" alt="Imagem do empreendimento">
-                <h5>Alpha Versailles</h5>
-                <div class="itens">
-                    <div class="room">
-                        <img src="./images/quartos.png" alt="Icone quarto">
-                        <p>2 dormitorios</p>
-                    </div>
-                    <div class="size">
-                        <img src="./images/tamanho.png" alt="Imagem tamanho">
-                        <p>106m² à 112m²</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <a href="#">Ver detalhes</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/empreendimentos/emp2.webp" alt="Imagem do empreendimento">
-                <h5>Pátio São Paulo</h5>
-                <div class="itens">
-                    <div class="room">
-                        <img src="./images/quartos.png" alt="Icone quarto">
-                        <p>2 ou 3 dormitorios</p>
-                    </div>
-                    <div class="size">
-                        <img src="./images/tamanho.png" alt="Icone tamanho">
-                        <p>65m² à 88m²</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <a href="#">Ver detalhes</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/empreendimentos/emp1.webp" alt="Imagem do empreendimento">
-                <h5>Square Saint Lambert</h5>
-                <div class="itens">
-                    <div class="room">
-                        <img src="./images/quartos.png" alt="Icone quarto">
-                        <p>Até 4 suítes</p>
-                    </div>
-                    <div class="size">
-                        <img src="./images/tamanho.png" alt="Icone banheiro">
-                        <p>69m² à 213m²</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <a href="#">Ver detalhes</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/empreendimentos/emp1.webp" alt="Imagem do empreendimento">
-                <h5>Reserva Mirage</h5>
-                <div class="itens">
-                    <div class="room">
-                        <img src="./images/quartos.png" alt="Icone quarto">
-                        <p>2 ou 3 dormitorios</p>
-                    </div>
-                    <div class="size">
-                        <img src="./images/tamanho.png" alt="Icone tamanho">
-                        <p>37,80m² à 105m²</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <a href="#">Ver detalhes</a>
-                </div>
-            </div>
          </div>
-    </section>
+    </section> 
     <section class="cta">
         <div class="chamada">
             <h2>Vamos achar sua nova casa juntos!</h2>
@@ -463,6 +342,5 @@
         </div>
     </footer>
     <script src="./js/menu.js"></script>
-    <script src="./js/imoveis.js"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+section.sobreBeneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+
+    .dif {
+        display: flex;
+        padding: 50px 10%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        .item {
+            padding: 0 20px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        color: rgba(232, 230, 230, 0.5);
+    }
+}
