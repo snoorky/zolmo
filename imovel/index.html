@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raphael Vitor">
+    <meta name="description" content="Case para um consultor imobiliário de Sorocaba">
+    <meta name="keywords" content="imoveis, alto padrao, consultor imobiliario, sorocaba, casa, apartamento">
+    <meta property="og:title" content="Raphael - Projeto Zolmo">
+    <meta property="og:description" content="Case para um consultor imobiliário de Sorocaba">
+    <meta property="og:image" content="https://sno-orky.github.io/zolmo/images/c2a99153f2b44e7a86654564e2f74114.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Raphael - Zolmo: Condominio</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo do Zolmo">
+            <div class="copyright">
+                <p style="color: inherit;" id="nomeLogo">ZOLMO</p>
+                <p style="color: inherit;">consultor imobiliário</p>
+                <p style="color: inherit;">CRECI 192962-F</p>
+            </div>
+        </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+                <li class="dropdown">Serviços
+                    <ul class="itens">
+                        <li><a href="../intermediacao.html">Intermediação Imobiliária</a></li>
+                        <li><a href="../avaliacao.html">Avaliação Imobiliária</a></li>
+                        <li><a href="../imoveis.html">Compra e Venda</a></li>
+                        <li><a href="../migracao.html">Assessoria para Migração</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="https://api.whatsapp.com/send?phone=5515996578197">
+                <h6>Fale Conosco</h6>
+                <p>+55 15 99657-8197</p>
+            </a>
+        </div>
+        <div class="navMobile">
+            <img src="../images/menu.png" alt="Logo do Zolmo">
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../intermediacao.html">Intermediação Imobiliária</a></li>
+                    <li><a href="../avaliacao.html">Avaliação Imobiliária</a></li>
+                    <li><a href="../imoveis.html">Compra e Venda</a></li>
+                    <li><a href="../migracao.html">Assessoria para Migração</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="pagesBanner">
+        <div class="background">
+            <img src="../imovel/back-condominio.jpg" alt="">
+        </div>
+        <div class="overlay"></div>
+        <div class="info">
+            <h3 style="color: white;">EMPREENDIMENTOS</h3>
+            <h1>Alphaville Esplanada 3</h1>
+        </div>
+    </section>
+    <section class="aboutMe">
+        <div class="history">
+            <h2>Sobre o imóvel</h2>
+            <p>Localizada no Alphaville Esplanada 3, em Votorantim, esta casa oferece um escritório, proporcionando um espaço dedicado ao trabalho ou estudo. Desfrute de três salas distintas para estar, TV e jantar, proporcionando ambientes versáteis e acolhedores. A residência conta com despensa para organização, além de um espaçoso ambiente gourmet e uma piscina para momentos de lazer. Com quatro vagas de garagem, móveis planejados e ar-condicionado, esta casa une conforto e praticidade em todos os detalhes.</p>
+        </div>
+        <div class="comprar">
+            <table>
+                <tr>
+                    <td class="title">Venda</td>
+                    <td>R$2.590.000,00</td>
+                </tr>
+                <tr>
+                    <td class="title">Condomínio</td>
+                    <td>Sob Consulta</td>
+                </tr>
+                <tr>
+                    <td class="title">IPTU</td>
+                    <td>Sob Consulta</td>
+                </tr>
+                <tr>
+                    <td class="title">Valor total</td>
+                    <td>R$2.590.000,00</td>
+                </tr>
+            </table>
+            <hr>
+            <a href="#">Entrar em Contato</a>
+        </div>
+    </section>
+    <section class="imovelGaleria">
+        <h2>Conheça o imóvel</h2>
+        <div class="galeria">
+            <img src="./image01.jpg" alt="" class="fotoPrincipal">
+            <div class="thumbnails">
+                <img src="./image02.jpg" alt="" class="foto" onclick="showImage('./image02.jpg')">
+                <img src="./image03.jpg" alt="" class="foto" onclick="showImage('./image03.jpg')">
+                <img src="./image04.jpg" alt="" class="foto" onclick="showImage('./image04.jpg')">
+                <img src="./image05.jpg" alt="" class="foto" onclick="showImage('./image05.jpg')">
+                <img src="./image06.jpg" alt="" class="foto" onclick="showImage('./image06.jpg')">
+                <img src="./image08.jpg" alt="" class="foto" onclick="showImage('./image08.jpg')">
+                <img src="./image01.jpg" alt="" class="foto" onclick="showImage('./image01.jpg')">
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="news">
+            <div class="info">
+                <h2>Assine a nossa newsletter</h2>
+                <p>Mantenha-se informado e esteja à freente das melhores escolhas para o seu futuro lar.</p>
+            </div>
+            <div class="contact">
+                <form action="#" method="post">
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <img src="../images/email.png" alt="Icone email">
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="mapsite">
+            <div class="info">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="Logo do Zolmo">
+                    <div class="copyright">
+                        <p style="color: inherit;" id="nomeLogo">ZOLMO</p>
+                        <p style="color: inherit;">consultor imobiliário</p>
+                        <p style="color: inherit;">CRECI 192962-F</p>
+                    </div>
+                </div>
+                <p>Sou um consultor imobiliário especializado em imóveis de alto padrão, focando em condomínios fechados em Sorocaba e região. Minha abordagem consultiva supera expectativas realizando sonhos e deixando todos os clientes satisfeitos.</p>
+                <div class="social">
+                    <img src="../images/facebook.png" alt="Icone facebook">
+                    <img src="../images/instagram.png" alt="Icone instagram">
+                </div>
+            </div>
+            <div class="institucional">
+                <h4>Institucional</h4>
+                <a href="../sobre.html">Sobre Nós</a>
+                <a href="../intermediacao.html">Intermediação Imobiliária</a>
+                <a href="./imoveis.html">Compra e Venda Exclusiva</a>
+                <a href="../avaliacao.html">Avaliação Imobiliária</a>
+                <a href="../migracao.html">Assessoria para Migração</a>
+            </div>
+            <div class="suporte">
+                <h4>Suporte</h4>
+                <a href="../contato.html">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="https://api.whatsapp.com/send?phone=5515996578197">+55 15 99657-8197</a>
+                <a href="mailto:raphaelvitorlopes@icloud.com">raphaelvitorlopes@icloud.com</a>
+                <p>End: Jardim Europa, Sorocaba/SP</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>ZOLMO. Consultor imobiliário ©. Todos os direitos reservados. Desenvolvido por <a href="http://sno-orky.github.io/">Raphael</a>.</p>
+        </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>

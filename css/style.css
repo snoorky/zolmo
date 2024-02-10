@@ -601,7 +601,8 @@ footer .copyright p {
 
 section.pagesBanner {
   background-size: cover;
-  padding: 150px 10%;
+  padding: 0 10%;
+  height: 500px;
   position: relative;
   display: flex;
   justify-content: left;
@@ -614,7 +615,7 @@ section.pagesBanner .background img {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-size: contain;
+  background-size: cover;
 }
 section.pagesBanner .overlay {
   position: absolute;
@@ -718,6 +719,60 @@ section.aboutMe .profile .circleLogo img.logo {
   height: 50px;
   border-radius: 0;
 }
+section.aboutMe .comprar {
+  padding: 20px 50px;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px 0 gray;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section.aboutMe .comprar table {
+  width: 100%;
+}
+section.aboutMe .comprar table .title {
+  text-align: left;
+  color: #2f3a52;
+  font-weight: 600;
+}
+section.aboutMe .comprar table td {
+  text-align: right;
+  padding: 10px 0;
+}
+section.aboutMe .comprar hr {
+  width: 105%;
+  position: relative;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+section.aboutMe .comprar a {
+  width: 80%;
+  text-align: center;
+  padding: 16px 32px;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  margin-top: 8px;
+}
+section.aboutMe .comprar .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
+section.aboutMe .comprar .item img {
+  width: 50px;
+}
+section.aboutMe .comprar .item p {
+  text-align: center;
+  width: 110%;
+}
 
 section.sobreBeneficios {
   display: flex;
@@ -742,6 +797,68 @@ section.sobreBeneficios .dif .item p {
 section.sobreBeneficios hr {
   width: 100%;
   color: rgba(232, 230, 230, 0.5);
+}
+
+section.lazer {
+  background-color: #ffffff;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section.lazer .areas {
+  width: 100%;
+  margin: 50px -20px 100px 0;
+  display: flex;
+  flex-flow: wrap;
+}
+section.lazer .areas .item {
+  width: 233px;
+  box-shadow: 0 0 10px 0 gray;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 15px 15px 0;
+}
+section.lazer .areas .item h6, section.lazer .areas .item p {
+  white-space: nowrap;
+}
+
+section.imovelGaleria {
+  background: linear-gradient(180deg, #ffffff, #e8e6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+section.imovelGaleria .galeria {
+  border: 1px solid black;
+  margin: 50px 0;
+  width: 100%;
+  height: 590px;
+  position: relative;
+}
+section.imovelGaleria .galeria .fotoPrincipal {
+  width: 90%;
+  height: 590px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.imovelGaleria .galeria .thumbnails {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 9.5%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+}
+section.imovelGaleria .galeria .thumbnails .foto {
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 section.sobreParceria {

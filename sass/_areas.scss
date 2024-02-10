@@ -1,0 +1,27 @@
+section.lazer {
+    background-color: #ffffff;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .areas {
+        width: 100%;
+        margin: 50px -20px 100px 0;
+        display: flex;
+        flex-flow: wrap;
+
+        .item {
+            width: 233px;
+            box-shadow: 0 0 10px 0 gray;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0 15px 15px 0;
+
+            h6, p {
+                white-space: nowrap;
+            }
+        }
+    }
+}
