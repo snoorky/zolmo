@@ -81,7 +81,7 @@ section.imoveis {
         margin: 100px -10px 50px -10px;
 
         .card {
-            width: 368px;
+            width: 435px;
             border: 1px solid #2f3a52;
             margin: 10px;
             border-radius: 10px;
@@ -98,7 +98,7 @@ section.imoveis {
             .itens {
                 margin: 0 20px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
 
                 .room, .bath, .size {
                     display: flex;

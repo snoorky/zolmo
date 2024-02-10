@@ -349,7 +349,7 @@ section.imoveis .containerCondominios, section.imoveis .containerEmpreendimentos
   margin: 100px -10px 50px -10px;
 }
 section.imoveis .containerCondominios .card, section.imoveis .containerEmpreendimentos .card {
-  width: 368px;
+  width: 435px;
   border: 1px solid #2f3a52;
   margin: 10px;
   border-radius: 10px;
@@ -364,7 +364,7 @@ section.imoveis .containerCondominios .card h5, section.imoveis .containerEmpree
 section.imoveis .containerCondominios .card .itens, section.imoveis .containerEmpreendimentos .card .itens {
   margin: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 section.imoveis .containerCondominios .card .itens .room, section.imoveis .containerCondominios .card .itens .bath, section.imoveis .containerCondominios .card .itens .size, section.imoveis .containerEmpreendimentos .card .itens .room, section.imoveis .containerEmpreendimentos .card .itens .bath, section.imoveis .containerEmpreendimentos .card .itens .size {
   display: flex;
@@ -813,14 +813,14 @@ section.lazer .areas {
   display: flex;
   flex-flow: wrap;
 }
-section.lazer .areas .item {
-  width: 233px;
+section.lazer .areas .espacos {
+  width: 283px;
   box-shadow: 0 0 10px 0 gray;
   border-radius: 20px;
   padding: 20px;
   margin: 0 15px 15px 0;
 }
-section.lazer .areas .item h6, section.lazer .areas .item p {
+section.lazer .areas .espacos h6, section.lazer .areas .espacos p {
   white-space: nowrap;
 }
 
